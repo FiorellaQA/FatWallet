@@ -1,0 +1,92 @@
+@import "_variables";
+@import "_mixins";
+
+* {
+  margin:0;
+  padding: 0;
+  @include border-box;
+}
+html,
+body{
+  //font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header {
+  margin: 20px 0;
+  background-color: #36354C;
+  color:#fff;
+  .glyphicon{
+    color:white;
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .flex_right{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+section {
+  .tarjetas{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+}
+
+//.movimiento{
+//  height: 70px;
+//  justify-content: center;
+//  display: flex;
+//  align-items: center;
+//}
+//.movimiento__monto{
+//  font-size: 18px;
+//  color: #D56D8A;
+//}
+//.hora{
+//  font-size: 10px;
+//}
+//
+//.description{
+//  color:gray;
+//}
+//.day,
+//.title{
+//  font-size: 18px;
+//  color: white;
+//  font-weight: bold;
+//}
+//.gray{
+//  color:gray;
+//}
+//
+//
+//hr{
+//  /* width: 100%; */
+//  margin: 10px 0;
+//  height: 1px;
+//  color: #444242;
+//  background-color: #444242;
+//  border: none;
+//
+//}
+//.arrow-expense{
+//  -ms-transform: rotate(-5deg); /* IE 9 */
+//  -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+//  transform: rotate(-5deg);
+//}
+//
+//.sidenav {
+//  height: 100%;
+//  width: 0;
+//  position: fixed;
+//  z-index: 1;
+//  top: 0;
+//  left: 0;
+//  background-color: #111;
+//  overflow-x: hidden;
+//  transition: 0.5s;
+//  padding-top: 60px;
+//}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link href="assets/vendor/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+		<title>APP</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row nav_bar">
+					<div class="col-xs-6">
+						<span id="hamburguer" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</div>
+					<div class="col-xs-6 flex_right">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="print"></section>
+			<!--Movimientos-->
+			<!--<div class="row movimiento">-->
+				<!--<div class="col-xs-2 text-center movimiento__fecha">-->
+					<!--<p class="day">12</p>-->
+					<!--<p class="month gray">Abril</p>-->
+				<!--</div>-->
+				<!--<div class="col-xs-7 movimiento__descripcion">-->
+					<!--<span class="hora gray">12:11</span>-->
+					<!--<p class="title">Expense</p>-->
+					<!--<p class="description gray">Tanta Restaurant</p>-->
+				<!--</div>-->
+				<!--<div class="col-xs-3 movimiento__monto">-->
+					<!--<span class="glyphicon glyphicon-arrow-left arrow-expense" aria-hidden="true"></span>-->
+					<!--<span class="monto">32<sup>.00</sup></span>-->
+				<!--</div>-->
+			<!--</div>-->
+		
+			<!------------------->
+		
+		
+		<script src="assets/vendor/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="assets/vendor/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="models/Tarjeta.js" type="text/javascript"></script>
+		<script src="models/Transaccion.js" type="text/javascript"></script>
+		<script src="models/Presupuesto.js" type="text/javascript"></script>
+		<script src="helpers/preload.js"></script>
+		<script type="text/javascript">
+			var tarjetasGlobal = [];
+			var presupuestosGlobal = [];
+			
+
+			var l = new Preload();
+			l.loading();
+			console.log(tarjetasGlobal);
+		</script>
+		<script src="controllers/TarjetasController.js" type="text/javascript"></script>
+		<script src="assets/js/app.js" type="text/javascript"></script>
+	
+  </body>
+</html>
